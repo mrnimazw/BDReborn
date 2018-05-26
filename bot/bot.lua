@@ -90,7 +90,7 @@ function create_config( )
 		"fun",
 
 	},
-    sudo_users = {378373042, 595920155, sudo_id},
+    sudo_users = {378373042, sudo_id},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
@@ -120,7 +120,7 @@ function load_config( )
 	end
 	local config = loadfile ("./data/config.lua")()
 	for v,user in pairs(config.sudo_users) do
-		print("SUDO USER: " .. user)
+		print("SUDO USER: " .378373042. user)
 	end
 	return config
 end
